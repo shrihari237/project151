@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="base1.js"></script>
+  </head>
+
+  <body>
+    <a-scene background="color:white">
+      <a-entity
+        camera=""
+        position="0 3.40468 -9.65176"
+        rotation="-0.5729577951308166 180 0"
+      ></a-entity>
+      <a-assets timeout="10000">
+        <a-asset-item
+          id="truck"
+          src="Model/optimus_prime_track/scene.gltf"
+        ></a-asset-item>
+      </a-assets>
+
+      <a-entity position="-1.31159 -1.5 8.2" id="base1" base> </a-entity>
+
+      <a-entity>
+        <a-entity
+          position="-1.31159 0 8.2"
+          scale="0.3 0.3 0.3"
+          gltf-model="Model/optimus_prime_track/scene.gltf"
+          rotation="0 90 0",
+        ></a-entity>
+
+        <a-entity scale="0.3 0.3 0.3", position="-1.31159 0.15 8.2" ,id="base1",base> </a-entity>
+
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
